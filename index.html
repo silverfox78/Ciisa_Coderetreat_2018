@@ -22,49 +22,168 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    One of three columns
-                </div>
-                <div class="col-sm">
-                    One of three columns
-                </div>
-                <div class="col-sm">
-                    One of three columns
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/CIISA.png" style="width:200px;" alt="Logo CIISA">
+                    </div>
+                    <div class="col-9">
+                        <h1 class="display-4">Jornada Coderetreat</h1>
+                        <p class="lead text-monospace">La iniciativa comparte el espíritu de celebrar la pasión por el
+                            desarrollo de software que el movimiento global coderetreat.org difunde mediante el
+                            siguiente enunciado:</p>
+                        <span class="align-middle">
+                            <p class="font-italic">"Reflexion sobre los fundamentos de un buen y sustentable desarrolo
+                                de software"</p>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="card" style="width: 18rem;">
-            <img class="card-img-top rounded-circle" src="img/CCastillo.jpg" alt="Claudio Castillo">
-            <div class="card-body">
-                    
-              <h5 class="card-title">Claudio Castillo Rojas</h5>
-              <p class="card-text">Arquitecto e Ingeniero de Software en Ministerio de Justicia de Chile</p>
-              <a href="https://www.linkedin.com/in/claudio-castillo-rojas-07225326" class="btn btn-primary">Linkeind</a>
-            </div>
-          </div>
 
-          <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-circle" src="img/SBarrera.jpg" alt="Samuel Barrera Bastidas">
-                <div class="card-body">
-                  <h5 class="card-title">Samuel Barrera Bastidas</h5>
-                  <p class="card-text">Architect & Full Stack Developer en VidaSecurity</p>
-                  <a href="https://www.linkedin.com/in/samuelbarrera/" class="btn btn-primary">Linkeind</a>
+            <hr class="my-4" />
+
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Cronograma del evento</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Bloque</th>
+                                        <th scope="col">Inicio*</th>
+                                        <th scope="col">Tema</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Bloque A</th>
+                                        <td>09:00</td>
+                                        <td>Recepción</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque B</th>
+                                        <td>09:40</td>
+                                        <td>Bienvenida</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque C</th>
+                                        <td>10:00</td>
+                                        <td>Dinámica – Juego de las monedas</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque D</th>
+                                        <td>10:30</td>
+                                        <td>Presentación de Scrum</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque E</th>
+                                        <td>11:30</td>
+                                        <td>Kata – Juego de la vida</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque F</th>
+                                        <td>13:00</td>
+                                        <td>Almuerzo</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque G</th>
+                                        <td>13:30</td>
+                                        <td>Lean Coffe</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque H</th>
+                                        <td>14:30</td>
+                                        <td>Dinámica – Torres de spaghetti</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque I</th>
+                                        <td>15:15</td>
+                                        <td>Presentación Auto-Organización</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque J</th>
+                                        <td>16:00</td>
+                                        <td>Presentación Auto-Organización</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque K</th>
+                                        <td>17:15</td>
+                                        <td>Dinámica – Requerimiento en imágenes</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Bloque L</th>
+                                        <td>17:40</td>
+                                        <td>Cierre</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-              </div>
-    
-    
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="row align-items-center">
+                <div class="col">
+                    <h3>Presentadores</h3>
+                </div>
+            </div>
+            <br/>
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top rounded-circle" src="img/CCastillo.jpg" alt="Claudio Castillo">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Claudio Castillo Rojas</h5>
+                            <p class="card-text">Arquitecto e Ingeniero de Software en Ministerio de Justicia de Chile</p>
+                            <a href="https://www.linkedin.com/in/claudio-castillo-rojas-07225326" class="btn btn-primary">Linkeind</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top rounded-circle" src="img/SBarrera.jpg" alt="Samuel Barrera Bastidas">
+                        <div class="card-body">
+                            <h5 class="card-title">Samuel Barrera Bastidas</h5>
+                            <p class="card-text">Architect & Full Stack Developer en VidaSecurity</p>
+                            <a href="https://www.linkedin.com/in/samuelbarrera/" class="btn btn-primary">Linkeind</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
 </body>
 
 </html>
