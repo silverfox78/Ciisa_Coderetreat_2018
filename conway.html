@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="es" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="es" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="es" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="es">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="content-type" content="text/html; utf-8">
+    <meta name="language" content="Spanish">
+    <meta name="content-language" content="es">
+    <meta name="robots" content="all">
+    <meta name="Keywords" content="Coderetreat, Codenauta, CIISA, ponyo" />
+    <meta http-equiv="X-UA-Compatible" content="IE=IE9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ponyo.ico">
+    <title>CIISA - Coderetreat & Codenauta - v2018</title>
+    <meta name="description" content="Evento similar a Coderetreat, una iniciativa Codenauta en CIISA">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                        <a href="https://www.facebook.com/130343107010280/posts/2178669132177657/">
+                            <img src="img/CIISA.png" style="width:200px;" alt="Logo CIISA">
+                        </a>
+                        <br />
+                    </div>
+                    <div class="col-sm-12 col-md-9 text-center">
+                        <h3>Jornada Coderetreat</h3>
+                        <h1>El juego de la vida de Conway</h1>
+                        <img src="img/Conway.jpg" style="width:60%;">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <hr class="my-4" />
+
+                <a href="https://es.wikipedia.org/wiki/Juego_de_la_vida">
+                    <div class="alert alert-info text-center" role="alert">
+                        Sobre el Juego de la Vida de Conway
+                    </div>
+                </a>
+                <br>
+                <a href="https://es.wikipedia.org/wiki/John_Horton_Conway">
+                    <div class="alert alert-info text-center" role="alert">
+                        Sobre John Horton Conway
+                    </div>
+                </a>
+                <br/>
+            </div>
+
+            <div>
+                <hr class="my-4" />
+
+                <h3>Reglas del juego:</h3>
+
+                <p class="text-monospace">
+                    Los eventos operan en funcion de la cantidad de vecinos y los cambios solo se aplican tras cerrar el ciclo, estos eventos son:
+                </p>
+
+                <ul>
+                    <li>Soledad</li>
+                    <li>Sobrepoblacion</li>
+                    <li>Reproduccion</li>
+                    <li>Rstasis</li>
+                </ul>
+                <br/>
+            </div>
+
+            <div>
+                <hr class="my-4" />
+
+                <h3>Evento de Soledad</h3>
+                <img src="img/soledad.png">
+                <br/>
+                <p class="text-monospace">
+                    Cuando una celula no posee vecinas, esta <span class="font-weight-bold">Muere</span>.
+                </p>
+                <br/>
+            </div>
+
+            <div>
+                <hr class="my-4" />
+
+                <h3>Evento de Sobrepoblacion</h3>
+                <img src="img/sobrepoblacion.png">
+                <br/>
+                <p class="text-monospace">
+                    Cuando una celula posee cuatro o mas vecinas, esta <span class="font-weight-bold">Muere</span>.
+                </p>
+                <br/>
+            </div>
+
+
+            <div>
+                <hr class="my-4" />
+
+                <h3>Evento de Reproduccion</h3>
+                <img src="img/reporduccion.png">
+                <br/>
+                <p class="text-monospace">
+                    Si la casilla se encuentra vacia y tiene exactamente tres vecinas, aqui <span class="font-weight-bold">Nace</span> una celula.
+                </p>
+                <br/>
+            </div>
+
+            <div>
+                <hr class="my-4" />
+
+                <h3>Evento de Estasis</h3>
+                <img src="img/estasis.png">
+                <br/>
+                <p class="text-monospace">
+                    Si una celula posee tres o dos vecinas, ella <span class="font-weight-bold">Sobrevive</span>.
+                </p>
+                <br/>
+            </div>
+
+            <div class="align-items-center text-center">
+                <br/><br/><br/>
+                <hr class="my-4" />
+
+                <h3>Manos a la obra...</h3>
+                <img src="img/java_logo.png" style="width:200px;" />
+                <br/>
+                <p class="text-monospace">
+                    La idea original es codificar este problema en algun lenguaje <span class="font-weight-bold">X</span> pero siempre usando pruebas unitarias, osea <span class="font-weight-bold">TDD</span>.
+                </p>
+
+                <img src="img/tdd-red-green-refactor.png" />
+                <br/><br/>
+                <p class="text-monospace">
+                    Pero en funcion del tiempo y la jornada, usaremos especificamente JAVA programando en un formato grupal.
+                </p>
+                <br/>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
